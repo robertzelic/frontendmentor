@@ -17,6 +17,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: var(--dark-grayish-blue);
   font-size: 14px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -28,7 +34,6 @@ img {
   background-color: var(--white);
   border-radius: 10px;
   max-width: 350px;
-  margin: 80px auto;
   overflow: hidden;
   display: grid;
 }
