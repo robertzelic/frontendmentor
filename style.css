@@ -74,11 +74,11 @@ img {
   align-items: center;
 }
 
-.description__price span {
+.description__price del {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   color: var(--dark-grayish-blue);
 }
 
