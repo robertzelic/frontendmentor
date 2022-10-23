@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-color: var(--primary-pale-blue);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 20px 30px rgba(118, 108, 241, 0.2);
+}
+
+.order {
+  padding: 20px 48px;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.description {
+  color: var(--neutral-desaturated-blue);
+  line-height: 1.6;
+}
+
+.title,
+.description {
+  margin-block: 18px;
+}
+
+.plan {
+  background-color: var(--neutral-pale-blue);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 50px;
+}
+
+.anual {
+  margin-right: auto;
+  /* flex: 1; -> this also works (instead of margin-right) */
+  line-height: 1.6;
+}
+
+.anual-plan {
+  font-weight: 900;
+}
+
+.price {
+  color: var(--neutral-desaturated-blue);
+}
+
+.plan > div {
+  text-align: left;
+}
+
+.change-link:link,
+.change-link:visited {
+  color: var(--primary-bright-blue);
+  font-weight: 900;
+}
+
+.change-link:hover,
+.change-link:active {
+  color: rgb(118, 108, 241);
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  margin-block: 32px;
+}
+
+.btn-proceed {
+  width: 100%;
+  background-color: var(--primary-bright-blue);
+  padding-block: 14px;
+  border-radius: 12px;
+  color: var(--primary-pale-blue);
+  box-shadow: 0px 8px 24px 10px rgba(118, 108, 241, 0.3);
+  transition: background-color 0.4s;
+}
+
+.btn-proceed:hover {
+  background-color: rgb(118, 108, 241);
+}
+
+.btn-cancel {
+  background-color: transparent;
+  margin-inline: auto;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--neutral-desaturated-blue);
+}
+
+.btn-cancel:hover {
+  color: #000;
+}
+
+@media (max-width: 400px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: 100%;
+  }
+}
