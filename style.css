@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@300;400&display=swap');
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white-1: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--dark-desaturated-blue);
+  display: flex;
+  flex-direction: column;
+  max-width: 33rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.header-image {
+  position: relative;
+}
+
+.header-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--soft-violet);
+  opacity: 0.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 3.2rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.description {
+  margin-block: 1.4rem 3.4rem;
+  color: var(--slightly-transparent-white);
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.title span {
+  color: var(--soft-violet);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.stats span {
+  text-transform: uppercase;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+  color: var(--slightly-transparent-white-1);
+}
+
+@media (min-width: 1080px) {
+  .card {
+    flex-direction: row;
+    max-width: 111rem;
+  }
+
+  .header-image {
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .content {
+    padding: 7rem 11rem 6rem 7rem;
+    text-align: left;
+    row-gap: 2.4rem;
+  }
+
+  .title {
+    font-size: 3.6rem;
+  }
+
+  .description {
+    margin-block: 0 auto;
+  }
+
+  .stats {
+    flex-direction: row;
+    column-gap: 15%;
+  }
+}
