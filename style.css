@@ -54,7 +54,7 @@ img {
   position: absolute;
   inset: 0;
   background-color: var(--soft-violet);
-  opacity: 0.6;
+  mix-blend-mode: multiply;
 }
 
 .content {
