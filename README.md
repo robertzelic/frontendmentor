@@ -17,7 +17,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Here](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
-- Live Site URL: [Here](https://robertzelic.github.io/stats-preview-card-component-solution)
+- Live Site URL: [Here](https://robertzelic.github.io/stats-preview-card-component)
 
 ## My process
 
