@@ -30,7 +30,7 @@ body {
   font-size: 1.8rem;
   background-color: var(--dark-cyan);
   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-  background-position: -40% -40%, 40% 40%;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
