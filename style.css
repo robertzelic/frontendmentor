@@ -91,7 +91,7 @@ ul {
   gap: 1.8rem;
 }
 
-.testimonials article {
+.testimonials figure {
   background-color: var(--very-dark-magenta);
   color: var(--white);
   padding: 4rem 3.2rem 3rem;
@@ -182,15 +182,15 @@ ul {
     grid-column: 1 / -1;
   }
 
-  .testimonials article:nth-child(1) {
+  .testimonials figure:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1/15;
   }
-  .testimonials article:nth-child(2) {
+  .testimonials figure:nth-child(2) {
     grid-column: 2/3;
     grid-row: 2/16;
   }
-  .testimonials article:nth-child(3) {
+  .testimonials figure:nth-child(3) {
     grid-column: 3/4;
     grid-row: 3/17;
   }
