@@ -54,6 +54,10 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 70rem;
   padding-inline: 4rem;
@@ -106,15 +110,15 @@ p {
   background-color: var(--soft-magenta);
 }
 
-.social {
+.social-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1.2rem;
 }
 
-.social a:link,
-.social a:visited {
+.social-list-item a:link,
+.social-list-item a:visited {
   color: #fff;
   border: 1px solid #fff;
   font-size: 1.3rem;
@@ -161,19 +165,19 @@ p {
     padding: 1.8rem;
   }
 
-  .social {
+  .social-list {
     justify-content: flex-end;
   }
 
-  .social a:link,
-  .social a:visited {
+  .social-list-item a:link,
+  .social-list-item a:visited {
     width: 4rem;
     height: 4rem;
     font-size: 1.8rem;
   }
 
-  .social a:hover,
-  .social a:active {
+  .social-list-item a:hover,
+  .social-list-item a:active {
     color: var(--soft-magenta);
     border-color: var(--soft-magenta);
   }
