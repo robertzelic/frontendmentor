@@ -59,13 +59,14 @@ ul {
   color: var(--cyan);
 }
 
-.community h3 {
+.community p.subtitle {
   font-size: 1.6rem;
+  font-weight: 700;
   color: var(--bright-yellow);
   margin-block: 2.2rem 2rem;
 }
 
-.community p {
+.community p.description {
   font-size: 1.4rem;
   color: var(--grayish-blue);
   line-height: 1.8;
@@ -148,12 +149,12 @@ ul {
     font-size: 2.4rem;
   }
 
-  .community h3 {
+  .community p.subtitle {
     font-size: 1.8rem;
     margin-block-end: 1rem;
   }
 
-  .community p {
+  .community p.description {
     font-size: initial;
     line-height: 1.6;
   }
