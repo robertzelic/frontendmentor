@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --medium-grey-transparent: hsla(216, 12%, 54%, 0.151);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-block-end: 1rem;
+}
+
+h1,
+.btn {
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: var(--light-grey);
+}
+
+.card {
+  position: relative;
+  margin: 3rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.rating-state,
+.thank-you {
+  max-width: 41rem;
+  padding: 3.4rem;
+  border-radius: 3rem;
+  background-color: var(--dark-blue);
+}
+
+.rating-state p,
+.thank-you-description {
+  line-height: 1.6;
+}
+
+.rating-state p {
+  margin-block-end: 3rem;
+}
+
+.star {
+  background-color: var(--medium-grey-transparent);
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-block-end: 2.6rem;
+}
+
+.rates {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 3.2rem;
+}
+
+.rate label {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--medium-grey-transparent);
+  color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rate label:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rate-input:checked + label {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.btn {
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  width: 100%;
+  border: 0;
+  padding-block: 1.6rem;
+  border-radius: 3rem;
+  transition: all 0.2s ease-in;
+}
+
+.btn:not([disabled]) {
+  cursor: pointer;
+}
+
+.btn:not([disabled]):hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.rates input {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.thank-you {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  transition: opacity 0.2s ease-in;
+}
+
+.thank-you-image {
+  margin-block: 2rem;
+}
+
+.selected {
+  width: 20rem;
+  margin-inline: auto;
+  background-color: var(--medium-grey-transparent);
+  color: var(--orange);
+  border-radius: 3rem;
+  padding-block: 0.6rem;
+  margin-block-end: 3.2rem;
+}
+
+.thank-you-text {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-block-end: 1.4rem;
+}
+
+@media (min-width: 25em) {
+  .rate label {
+    width: 5rem;
+    height: 5rem;
+  }
+}
