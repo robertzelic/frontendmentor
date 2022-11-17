@@ -7,7 +7,7 @@ const rates = document.querySelectorAll(".rate");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   thankYou.classList.remove("hide");
-  seletedRate.textContent = document.querySelector("input:checked").id;
+  seletedRate.textContent = document.querySelector("input:checked").value;
 });
 
 rates.forEach((element) => {
