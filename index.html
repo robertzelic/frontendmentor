@@ -20,7 +20,14 @@
         <form novalidate class="form">
           <fieldset>
             <div class="input-group">
-              <input type="email" class="email" placeholder="Your email address..." />
+              <label for="email" class="sr-only">Your email address</label>
+              <input
+                type="email"
+                class="email"
+                name="email"
+                id="email"
+                placeholder="Your email address..."
+              />
               <p class="error-msg"></p>
             </div>
             <button type="submit" class="btn">Notify Me</button>
