@@ -49,6 +49,10 @@ button {
   margin-inline: auto;
 }
 
+header {
+  padding-block: 4rem 7rem;
+}
+
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
@@ -72,11 +76,10 @@ button {
 
 .logo {
   margin-inline: auto;
-  padding-block-start: 4rem;
 }
 
 .title {
-  margin-block: 7rem 3rem;
+  margin-block-end: 3rem;
   font-weight: 300;
   color: var(--gray);
 }
@@ -143,6 +146,10 @@ button {
   margin-block-end: 10rem;
 }
 
+footer {
+  padding-block-end: 4rem;
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -173,13 +180,17 @@ button {
     align-items: center;
   }
 
+  header {
+    padding-block: 4.2rem 5rem;
+  }
+
   .container {
     max-width: 70rem;
   }
 
   .title {
     font-size: 4.8rem;
-    margin-block: 5rem 2rem;
+    margin-block-end: 2rem;
   }
 
   .subscribe {
