@@ -22,9 +22,6 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2rem;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 img {
@@ -68,12 +65,14 @@ button {
 
 .container {
   max-width: 50rem;
+  margin-inline: auto;
   text-align: center;
-  padding: 4rem 2rem;
+  padding-inline: 2rem;
 }
 
 .logo {
   margin-inline: auto;
+  padding-block-start: 4rem;
 }
 
 .title {
