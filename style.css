@@ -80,7 +80,8 @@ a {
 }
 
 .snippets-content {
-  display: grid;
+  display: flex;
+  flex-direction: column-reverse;
   gap: 3.375rem;
 }
 
@@ -246,13 +247,13 @@ a {
   }
 
   .snippets-content {
-    grid-template-columns: auto auto;
+    flex-direction: row-reverse;
     align-items: center;
-    gap: 1.2rem;
+    gap: 7rem;
   }
 
   .snippets-content img {
-    transform: translateX(-5rem);
+    flex: 0 0 auto;
   }
 
   .snippets-content p {
@@ -260,6 +261,7 @@ a {
   }
 
   .snippets-content-1 {
+    flex: 1 0 auto;
     text-align: start;
     max-inline-size: 22rem;
   }
