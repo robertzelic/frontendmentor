@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--very-dark-blue-main-bg);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: var(--white);
+}
+
+a:hover,
+a:active {
+  color: var(--cyan);
+}
+
+p {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.card {
+  padding: 2.5rem;
+  background-color: var(--very-dark-blue-card-bg);
+  max-width: 35rem;
+  margin-inline: 3rem;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+}
+
+.img-equilibrium {
+  width: 100%;
+}
+
+.img-link {
+  display: block;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.img-overlay {
+  background-color: hsla(178 100% 50% / 0.5);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.title {
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-block: 2.2rem;
+}
+
+.description {
+  line-height: 1.4;
+  margin-block: 2rem;
+}
+
+.eth-and-days-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth,
+.days-left {
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+  font-size: 1.6rem;
+  margin-block: 0.6rem;
+}
+
+.eth {
+  color: var(--cyan);
+}
+
+.days-left {
+  color: var(--soft-blue);
+}
+
+.horizontal-line {
+  height: 0.1rem;
+  background-color: var(--very-dark-blue-line);
+  margin-block: 2rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  column-gap: 1.8rem;
+}
+
+.author-image {
+  width: 3.2rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.author-image img {
+  width: 100%;
+}
+
+.author p {
+  font-size: 1.6rem;
+}
+
+.author span {
+  color: var(--white);
+}
+
+@media (max-width: 420px) {
+  .title {
+    margin-block: 2rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+    margin-block: 1.8rem;
+  }
+  .horizontal-line {
+    margin-block: 1.4rem;
+  }
+}
