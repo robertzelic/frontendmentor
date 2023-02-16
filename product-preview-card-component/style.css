@@ -1,0 +1,122 @@
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-cream);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 10px;
+  max-width: 350px;
+  overflow: hidden;
+  display: grid;
+}
+
+.description {
+  margin: 26px;
+}
+
+.description__type {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.description__title,
+.description__price {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.description__title {
+  color: var(--very-dark-blue);
+  margin-block: 8px;
+  line-height: 1.1;
+}
+
+.description__text {
+  margin-block: 14px;
+  line-height: 1.6;
+}
+
+.description__price {
+  color: var(--primary-dark-cyan);
+  margin-block: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.description__price del {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--dark-grayish-blue);
+}
+
+.btn {
+  background-color: var(--primary-dark-cyan);
+  color: var(--white);
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn img {
+  width: 16px;
+  margin-inline-end: 6px;
+}
+
+@media (min-width: 750px) {
+  .card {
+    max-width: 580px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description {
+    margin: 32px;
+  }
+
+  .description__title {
+    margin-block: 20px;
+  }
+
+  .btn:hover {
+    background-color: rgb(47, 90, 47);
+  }
+
+  .btn:active {
+    background-color: rgb(83, 110, 83);
+  }
+}
