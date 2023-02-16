@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Here](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
-- Live Site URL: [Here](https://robertzelic.github.io/nft-preview-card-component)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/nft-preview-card-component)
 
 ### Built with
 
