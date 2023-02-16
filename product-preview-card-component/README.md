@@ -8,6 +8,10 @@ This is a solution to the [Product preview card component challenge on Frontend 
   <img width="60%" src="./images/screenshot.png">
 </p>
 
+### Links
+
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/product-preview-card-component)
+
 ### Built with
 
 - Semantic HTML5 markup
