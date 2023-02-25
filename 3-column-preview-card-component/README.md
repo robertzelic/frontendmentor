@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Here](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
-- Live Site URL: [Here](https://robertzelic.github.io/3-column-preview-card-component)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/3-column-preview-card-component)
 
 ## My process
 
