@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/four-card-feature-section)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/four-card-feature-section)
 
 ## My process
 

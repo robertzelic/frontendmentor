@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Here](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
-- Live Site URL: [Here](https://robertzelic.github.io/social-proof-section)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/social-proof-section)
 
 ## My process
 
