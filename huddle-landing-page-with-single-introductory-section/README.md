@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/huddle-landing-page-with-a-single-introductory-section)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
