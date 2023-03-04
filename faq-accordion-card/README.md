@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/faq-accordion-card)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/faq-accordion-card)
 
 ## My process
 

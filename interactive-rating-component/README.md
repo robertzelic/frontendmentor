@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/interactive-rating-component)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/interactive-rating-component)
 
 ## My process
 

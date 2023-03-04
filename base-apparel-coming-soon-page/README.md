@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/base-apparel-coming-soon-page)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/base-apparel-coming-soon-page)
 
 ## My process
 

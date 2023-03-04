@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/intro-component-with-signup-form)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/intro-component-with-signup-form)
 
 ## My process
 

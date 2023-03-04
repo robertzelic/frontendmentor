@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/testimonials-grid-section)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/testimonials-grid-section)
 
 ## My process
 
