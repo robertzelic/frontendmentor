@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/ping-coming-soon-page)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/ping-coming-soon-page)
 
 ## My process
 
