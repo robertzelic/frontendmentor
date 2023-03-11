@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 2rem;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input,
+button {
+  margin-inline: auto;
+}
+
+header {
+  padding-block: 4rem 7rem;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.container {
+  max-width: 50rem;
+  margin-inline: auto;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+.logo {
+  margin-inline: auto;
+}
+
+.title {
+  margin-block-end: 3rem;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.soon {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.subscribe {
+  margin-block-end: 5rem;
+}
+
+.form {
+  margin-block-end: 8rem;
+}
+
+.form.email-error .email {
+  border-color: var(--light-red);
+}
+
+.form .error-msg {
+  display: none;
+}
+
+.form.email-error .error-msg {
+  display: block;
+}
+
+.email {
+  width: 90%;
+  color: var(--very-dark-blue);
+  border: 1px solid var(--pale-blue);
+  padding: 2rem 4rem;
+  border-radius: 10rem;
+  font-size: inherit;
+}
+
+.email::placeholder {
+  color: var(--pale-blue);
+}
+
+.error-msg {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--light-red);
+  text-align: left;
+  padding-inline-start: 4rem;
+  margin-block-start: 0.8rem;
+}
+
+.btn {
+  width: 90%;
+  background-color: var(--blue);
+  color: #fff;
+  font-size: inherit;
+  border: none;
+  padding: 2rem;
+  border-radius: 20rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-img {
+  margin-block-end: 10rem;
+}
+
+footer {
+  padding-block-end: 4rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.list-item a:link,
+.list-item a:visited {
+  border: 1px solid var(--pale-blue);
+  color: var(--blue);
+  font-size: 2.4rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin-block-start: 4rem;
+  color: var(--gray);
+}
+
+@media (min-width: 50em) {
+  fieldset {
+    flex-direction: initial;
+    align-items: center;
+  }
+
+  header {
+    padding-block: 4.2rem 5rem;
+  }
+
+  .container {
+    max-width: 70rem;
+  }
+
+  .title {
+    font-size: 4.8rem;
+    margin-block-end: 2rem;
+  }
+
+  .subscribe {
+    margin-block-end: 4rem;
+  }
+
+  .input-group {
+    flex: 1;
+  }
+
+  .email,
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  .email {
+    padding: 1.8rem 4rem;
+    width: 100%;
+  }
+
+  .error-msg {
+    position: absolute;
+  }
+
+  .btn {
+    width: 20rem;
+    transition: opacity 0.2s ease-in;
+    cursor: pointer;
+    padding: 1.8rem;
+  }
+
+  .btn:hover {
+    opacity: 0.7;
+  }
+
+  .dashboard-img {
+    margin-block-end: 7rem;
+  }
+
+  .list-item a:link,
+  .list-item a:visited {
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.2s ease-in;
+  }
+
+  .list-item a:active,
+  .list-item a:hover {
+    background-color: var(--blue);
+    color: #fff;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    margin-block-start: 2.4rem;
+  }
+}

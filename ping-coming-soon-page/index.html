@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script src="https://kit.fontawesome.com/79440a8026.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" class="logo" alt="Ping Logo" />
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="title">We are launching <span class="soon">soon!</span></h1>
+        <p class="subscribe">Subscribe and get notified</p>
+        <form novalidate class="form">
+          <fieldset>
+            <div class="input-group">
+              <label for="email" class="sr-only">Your email address</label>
+              <input
+                type="email"
+                class="email"
+                name="email"
+                id="email"
+                placeholder="Your email address..."
+              />
+              <p class="error-msg"></p>
+            </div>
+            <button type="submit" class="btn">Notify Me</button>
+          </fieldset>
+        </form>
+        <img
+          src="./images/illustration-dashboard.png"
+          class="dashboard-img"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <ul class="social">
+          <li class="list-item">
+            <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li class="list-item">
+            <a href="#" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="list-item">
+            <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
