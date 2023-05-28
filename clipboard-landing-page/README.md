@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://robertzelic.github.io/clipboard-landing-page)
+- Live Site URL: [Here](https://robertzelic.github.io/frontendmentor/clipboard-landing-page)
 
 ## My process
 
