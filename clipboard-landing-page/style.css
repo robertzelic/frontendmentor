@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: var(--grayish-blue);
+  line-height: 1.625rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-block-end: 1.25rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+  margin-block-end: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-block-end: 0.625rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container,
+.container-wide,
+.container-max {
+  max-inline-size: 31.25rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.header {
+  padding-block-start: 7.5rem;
+}
+
+.logo {
+  margin-inline: auto;
+}
+
+.history {
+  padding-block: 3.75rem 7.3rem;
+}
+
+.snippets-content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3.375rem;
+}
+
+.snippets-content-1 p {
+  padding-block-end: 3rem;
+}
+
+.snippets .description,
+.access .description {
+  padding-block-end: 4rem;
+}
+
+.access {
+  padding-block: 8.5rem 5rem;
+}
+
+.workflow {
+  padding-block-end: 6rem;
+}
+
+.workflow-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2rem 2.8rem;
+}
+
+.workflow img {
+  padding-block: 2.8125rem;
+}
+
+.logos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+}
+
+.clipboard {
+  padding-block: 10.25rem 8.125rem;
+}
+
+.footer {
+  background-color: #f5f6f8;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 3.625rem;
+  padding-block: 3.125rem 2.25rem;
+}
+
+.nav-list {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.nav-list li {
+  padding-block: 0.875rem;
+}
+
+.nav-list li a {
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-list li a:hover {
+  color: var(--strong-cyan);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding-block: 1.625rem 3rem;
+}
+
+.social-list a path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.social-list a:hover path {
+  fill: var(--strong-cyan);
+}
+
+.buttons {
+  padding-block: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 3.125rem;
+  letter-spacing: 0.125rem;
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.6;
+}
+
+.btn-green {
+  background-color: var(--strong-cyan);
+  border-bottom: 0.25rem solid rgb(54, 170, 145);
+}
+
+.btn-blue {
+  background-color: var(--light-blue);
+  border-bottom: 0.25rem solid rgb(103, 115, 187);
+}
+
+@media (min-width: 62.5em) {
+  body {
+    font-size: 1.25rem;
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.1875rem;
+    margin-block-end: 1.3rem;
+  }
+
+  p {
+    line-height: 1.875rem;
+  }
+
+  .container {
+    max-inline-size: 50rem;
+  }
+
+  .container-wide {
+    max-inline-size: 74rem;
+  }
+
+  .container-max {
+    max-inline-size: 100%;
+  }
+
+  .buttons {
+    flex-direction: initial;
+    margin-inline: auto;
+    width: 29.5rem;
+  }
+
+  .snippets-content {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  .snippets-content img {
+    flex: 0 0 auto;
+  }
+
+  .snippets-content p {
+    font-size: 1rem;
+  }
+
+  .snippets-content-1 {
+    flex: 1 0 auto;
+    text-align: start;
+    max-inline-size: 22rem;
+  }
+
+  .snippets .description,
+  .access .description {
+    font-size: 1.1438rem;
+    padding-block-end: 4.8rem;
+  }
+
+  .workflow div > p {
+    font-size: 1.125rem;
+  }
+
+  .workflow-content {
+    flex-direction: initial;
+    align-items: baseline;
+    gap: 2rem;
+  }
+
+  .workflow-content > div {
+    flex: 1;
+  }
+
+  .workflow-content p {
+    font-size: 1rem;
+  }
+
+  .logos-list {
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-container {
+    gap: 8rem;
+  }
+
+  .footer .footer-container {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    padding-block: 3rem;
+  }
+
+  .nav {
+    margin-inline-end: auto;
+  }
+
+  .nav-list {
+    text-align: start;
+    columns: 3;
+    gap: 4.6rem;
+  }
+
+  .nav-list li {
+    padding-block: 0.5rem;
+  }
+
+  .social-list {
+    gap: 1.6rem;
+    padding: 0;
+  }
+}
